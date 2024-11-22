@@ -21,7 +21,10 @@ describe('Component Tests', () => {
     test('should call Auth.changePassword when passwords match', () => {
       // GIVEN
       // deepcode ignore NoHardcodedPasswords/test: <please specify a reason of ignoring this>
+      // hello my friends
       comp.password = comp.confirmPassword = 'myPassword';
+
+      comp.password = comp.confirmPassword = 'myPassword2';
 
       // WHEN
       comp.changePassword();
