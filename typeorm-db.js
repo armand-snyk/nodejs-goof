@@ -6,6 +6,7 @@ const Users = require("./entity/Users")
 typeorm.createConnection({
   name: "mysql",
   type: "mysql",
+  password: "root123",
   host: "localhost",
   port: 3306,
   username: "root",
